@@ -2,10 +2,10 @@ import type { LoadResult, ObjectHook, ResolveIdResult, TransformResult } from 'r
 import type { Plugin } from 'vite'
 import type { ParsedError } from '../types'
 import type { InspectContext } from './context'
-import Debug from 'debug'
 import { parse as parseErrorStacks } from 'error-stack-parser-es'
+import { createDebug } from 'obug'
 
-const debug = Debug('vite-plugin-inspect')
+const debug = createDebug('vite-plugin-inspect')
 
 type HookHandler<T> = T extends ObjectHook<infer F> ? F : T
 type HookWrapper<K extends keyof Plugin> = (

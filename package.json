@@ -54,8 +54,8 @@
   },
   "dependencies": {
     "ansis": "catalog:prod",
-    "debug": "catalog:prod",
     "error-stack-parser-es": "catalog:prod",
+    "obug": "catalog:prod",
     "ohash": "catalog:frontend",
     "open": "catalog:prod",
     "perfect-debounce": "catalog:frontend",
@@ -70,7 +70,6 @@
     "@iconify/json": "catalog:dev",
     "@nuxt/kit": "catalog:prod",
     "@types/codemirror": "catalog:dev",
-    "@types/debug": "catalog:dev",
     "@types/node": "catalog:dev",
     "@unocss/eslint-config": "catalog:dev",
     "@unocss/eslint-plugin": "catalog:dev",

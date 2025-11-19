@@ -7,7 +7,6 @@ catalogs:
     '@antfu/utils': ^9.2.0
     '@iconify/json': ^2.2.377
     '@types/codemirror': ^5.60.16
-    '@types/debug': ^4.1.12
     '@types/node': ^24.3.0
     '@unocss/eslint-config': ^66.4.2
     '@unocss/eslint-plugin': ^66.4.2
@@ -52,8 +51,8 @@ catalogs:
   prod:
     '@nuxt/kit': ^4.0.3
     ansis: ^4.1.0
-    debug: ^4.4.1
     error-stack-parser-es: ^1.0.5
+    obug: ^2.0.0
     open: ^10.2.0
     sirv: ^3.0.1
     unplugin-utils: ^0.3.0
