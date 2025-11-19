@@ -216,8 +216,8 @@ export class InspectContextViteEnv {
 
       return {
         id,
-        deps: getDeps(id),
-        importers: getImporters(id),
+        deps: getDeps(id) as string[],
+        importers: getImporters(id) as string[],
         plugins,
         virtual: isVirtual(plugins[0]?.name || '', this.data.transform[id]?.[0].name || ''),
         totalTime,

@@ -12,7 +12,7 @@ type HookWrapper<K extends keyof Plugin> = (
   fn: NonNullable<HookHandler<Plugin[K]>>,
   context: ThisParameterType<NonNullable<HookHandler<Plugin[K]>>>,
   args: NonNullable<Parameters<HookHandler<Plugin[K]>>>,
-  order: string
+  order: string,
 ) => ReturnType<HookHandler<Plugin[K]>>
 
 function hijackHook<K extends keyof Plugin>(plugin: Plugin, name: K, wrapper: HookWrapper<K>) {
