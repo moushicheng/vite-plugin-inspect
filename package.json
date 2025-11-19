@@ -33,7 +33,7 @@
     "node": ">=14"
   },
   "scripts": {
-    "build": "rimraf dist && pnpm run --sequential /^build:/",
+    "build": "premove dist && pnpm run --sequential /^build:/",
     "build:client": "vite build src/client",
     "build:js": "unbuild",
     "dev": "nr stub && INSPECT_DEV=true vite src/client",
@@ -89,7 +89,7 @@
     "lint-staged": "catalog:dev",
     "pathe": "catalog:frontend",
     "pinia": "catalog:frontend",
-    "rimraf": "catalog:dev",
+    "premove": "catalog:dev",
     "simple-git-hooks": "catalog:dev",
     "splitpanes": "catalog:frontend",
     "typescript": "catalog:dev",
